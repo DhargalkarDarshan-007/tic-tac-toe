@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    height: 435px;
+    height: 500px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -73,6 +73,60 @@ body {
     font-weight: bold;
 }
 
+
+
+.msg-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
 .hide{
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#msg {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    animation: winnerText 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes winnerText {
+    from {
+        transform: scale(1);
+        text-shadow: 0 0 10px gold;
+    }
+
+    to {
+        transform: scale(1.15);
+        text-shadow: 0 0 30px gold, 0 0 60px orange;
+    }
+}
+
