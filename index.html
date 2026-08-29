@@ -8,11 +8,15 @@
 </head>
 <body>
     <main>
-        <h2 class="head">Tic Tac Toe</h2>
+        <div class="msg-container hide">
+            <p id="msg">Winner</p>
+            <button class="newbtn">New Game</button>
+        </div>
+        <h2 class="head" style="font-size: 53px; color: rgb(255, 255, 255);">Tic Tac Toe</h2>
         <div class="container">
             <div class="game">
-              <button class="box">x</button>
-              <button class="box">0</button>
+              <button class="box"></button>
+              <button class="box"></button>
               <button class="box"></button>
               <button class="box"></button>
               <button class="box"></button>
@@ -22,7 +26,8 @@
               <button class="box"></button>
             </div>
         </div>
+        <button class="reset">Reset Game</button>
     </main>
-    
+    <script src="app.js"></script>
 </body>
 </html>
